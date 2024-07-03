@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpirit-COF</title>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header_inner">
+           <ul class="left">
+            <li><a href="./brand.html">BRAND</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+           </ul><!-- left -->
+           <ul class="logo">
+            <li>
+                <a href="./index.html"><img src="./images/logo.png" alt="logo"></a></li>
+           </ul><!-- logo -->
+           <ul class="right">
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">CART</a></li>
+           </ul><!-- right -->
+        </div><!-- header_inner -->
+    </div><!-- header-->
+
+    <div id="main_banner">
+         <!-- Swiper -->
+  <div class="main">
+    <div id="header"></div>
+    <!-- Swiper -->
+ <div class="swiper main_banner">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <a href="#"><img src="./images/main_banner.jpg" alt="메인배너이미지"></a>
+     </div><!--swiper-slide-->
+     <div class="swiper-slide">
+       <a href="#"><img src="./images/main_banner1.jpg" alt="메인배너이미지"></a>
+     </div><!--swiper-slide-->
+   
+   </div><!--swiper-wrapper-->
+   <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-pagination"></div>
+ </div><!--swiper-->
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".main_banner", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+    </div><!-- main_banner -->
+
+    <div id="best_sellers" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
+      <div class="best_sellers_inner">
+      <div class="best_text">
+        <h1>Best Sellers</h1>
+        <p>2주동안 가장 인기가 많은 베스트 제품을 만나보세요.</p>
+      </div><!-- best_text -->
+      <div class="best_item">
+         <!-- Swiper -->
+  <div class="swiper best_sell">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#"><img src="./images/best_sellers.jpg" alt=""></a>
+        <p><a href="#">The Moisture Barrier Dailty Lotion 500ml</a></p>
+      </div>
+      <div class="swiper-slide"><a href="#"><img src="./images/best_sellers1.jpg" alt=""></a></div>
+      <div class="swiper-slide"><a href="#"><img src="./images/best_sellers3.jpg" alt=""></a></div>
+      <div class="swiper-slide"><a href="#"><img src="./images/best_sellers.jpg" alt=""></a></div>
+     
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".best_sell", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        
+      },
+      slidesPerView: 3,
+      spaceBetween: 30,
+    });
+  </script>
+      </div><!-- best_item -->
+    </div><!-- best_sellers_inner -->
+    </div><!-- best_sellers -->
+
+    <div id="event" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
+      <div class="event_inner">
+        <div class="event_img">
+          <!-- Swiper -->
+   <div class="swiper event">
+     <div class="swiper-wrapper">
+       <div class="swiper-slide">
+         <a href="#"><img src="./images/event.jpg" alt=""></a>
+       </div>
+       <div class="swiper-slide">
+        <a href="#"><img src="./images/event.jpg" alt=""></a>
+      </div>
+       
+      
+     </div>
+     <div class="swiper-scrollbar"></div>
+   </div>
+ 
+   
+       </div><!-- event_img-->
+       <div class="event_text">
+        <h1>Event</h1>
+        <p>Everyday Offers & Services</p>
+        <h4><a href="#">더 알아보기</a></h4>
+       </div>
+      </div> <!-- event_inner -->
+
+    </div><!-- event -->
+
+
+    <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".event", {
+       scrollbar: {
+         el: ".swiper-scrollbar",
+         
+       },
+       slidesPerView: 1,
+       
+     });
+   </script>
+   <div id="new" data-aos="fade-down"
+   data-aos-easing="linear"
+   data-aos-duration="1500">
+    
+    <div class="new_inner">
+      <div class="new_text">
+        <h1>What's New</h1>
+        <p>세로운 제품을 소개합니다.</p>
+      </div><!-- new_text -->
+      <div class="new_img">
+        <div class="new_img1">
+          <div class="img1">
+            <img src="./images/best_sellers.jpg" alt="">
+            <p>제품 이릅 여기</p>
+          </div>
+          <div class="img2"><img src="./images/best_sellers.jpg" alt=""></div>
+          <div class="img3"><img src="./images/best_sellers.jpg" alt=""></div>
+        </div><!-- new_img1 -->
+
+        <div class="new_img2">
+          <div class="img4"><img src="./images/best_sellers.jpg" alt=""></div>
+          <div class="img5"><img src="./images/best_sellers.jpg" alt=""></div>
+          <div class="img6"><img src="./images/best_sellers.jpg" alt=""></div>
+        </div><!-- new_img1 -->
+      </div><!-- new_img -->
+    </div><!-- new_inner -->
+   </div><!-- new -->
+   <div id="brand_banner">
+    <p><a href="./brand.html"><img src="./images/brand_banner.jpg" alt="brand_banner"></a></p>
+   </div><!-- brand_banner -->
+
+   <div id="sns">
+    <div class="sns_inner">
+      <div class="sns_text">
+        <h1>instagram</h1>
+        <p><a href="#">@unnyeong__</a></p>
+      </div><!-- new_text -->
+      <div class="sns_img">
+        <div class="sns_img1">
+          <div class="img1"><img src="./images/sns1.jpg" alt="sns_img1"></div>
+          <div class="img2"><img src="./images/sns2.jpg" alt="sns_img2"></div>
+          <div class="img3"><img src="./images/sns3.jpg" alt="sns_img3"></div>
+        </div><!-- sns_img1 -->
+        </div><!--sns_img  -->
+    </div><!-- sns_inner -->
+   </div><!-- sns -->
+
+   <div id="footer">
+    <div class="footer_inner">
+      <div class="foot1">
+        <img src="./images/logo.png" alt="logo">
+        <p class="p4">NYEONG__ International Co.</p>
+        <p class="p3">Copyright © NYEONG__ International Co.<br>
+          All rights reserved.</p>
+      </div>
+      <div class="foot2">
+        <p class="p1">CUSTOMER CENTER</p>
+        <p class="p2">051-2222-2222</p>
+        <p class="p1">Contact</p>
+        <p>unnyeong__@gmil.com</p>
+      </div>
+      <div class="foot3">
+        <p class="p1"><b>CEO</b> : Jung un nyeong </p>
+        <p class="p2">E-commerce Permit Registration No : 2024-Busanjungang-24242</p>
+        <p class="p1">Address</p>
+        <p> 26, Jungang-daero, Jung-gu, Busan, Republic of Korea </p>
+      </div>
+    </div><!-- footer_inner -->
+   </div><!-- footer -->
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
